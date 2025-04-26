@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artex | Портфолио</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="preloader">
+        <div class="loader"></div>
+    </div>
+
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="#" class="logo" data-lang="logo">Artex</a>
+                <div class="nav-links">
+                    <a href="#about" data-lang="nav_about">Обо мне</a>
+                    <a href="#skills" data-lang="nav_skills">Навыки</a>
+                    <a href="#projects" data-lang="nav_projects">Проекты</a>
+                    <a href="#contact" data-lang="nav_contact">Контакты</a>
+                </div>
+                <div class="nav-actions">
+                    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+                        <i class="fas fa-moon"></i>
+                        <i class="fas fa-sun"></i>
+                    </button>
+                    <div class="language-switcher">
+                        <button class="lang-btn active" data-lang="ru">RU</button>
+                        <button class="lang-btn" data-lang="en">EN</button>
+                    </div>
+                    <div class="menu-toggle">
+                        <div class="hamburger"></div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title" data-lang="hero_title">Привет, я <span>Artex</span></h1>
+                    <p class="hero-subtitle" data-lang="hero_subtitle">Разработчик ПО и создатель будущей ОС</p>
+                    <div class="hero-actions">
+                        <a href="#contact" class="btn btn-primary" data-lang="hero_contact">Связаться</a>
+                        <a href="https://github.com/ArtexOS" target="_blank" class="btn btn-secondary" data-lang="hero_github">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="code-snippet">
+                        <pre><code class="language-java">// Пример кода на Rust
+fn main() {
+    let a: i32 = 2;
+    let b: i32 = 6;
+    let result: i32 = a + b;
+
+    println!("{} + {} = {}", a, b, result);
+}</code></pre>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section about">
+            <div class="container">
+                <h2 class="section-title" data-lang="about_title">Обо мне</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p data-lang="about_text1">Я Artex, увлеченный разработчик программного обеспечения с опытом работы в различных языках программирования и технологиях.</p>
+                        <p data-lang="about_text2">Моя основная специализация включает Java, C++, Rust, Kotlin, Python, Node.js и TypeScript. Я постоянно изучаю новые технологии и совершенствую свои навыки.</p>
+                        <p data-lang="about_text3">Одна из моих амбициозных целей - разработка собственной операционной системы, которая сочетает в себе производительность, безопасность и удобство использования.</p>
+                    </div>
+                    <div class="about-image">
+                        <div class="tech-icons">
+                            <i class="fab fa-java" title="Java"></i>
+                            <i class="fab fa-python" title="Python"></i>
+                            <i class="fab fa-js" title="JavaScript"></i>
+                            <i class="fab fa-rust" title="Rust"></i>
+                            <i class="fab fa-node-js" title="Node.js"></i>
+                            <i class="fas fa-code" title="C++"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section skills">
+            <div class="container">
+                <h2 class="section-title" data-lang="skills_title">Навыки</h2>
+                <div class="skills-grid">
+                    <div class="skill-card" data-skill="java">
+                        <div class="skill-icon">
+                            <i class="fab fa-java"></i>
+                        </div>
+                        <h3>Java</h3>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 5%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card" data-skill="cpp">
+                        <div class="skill-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>C++</h3>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 6%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card" data-skill="rust">
+                        <div class="skill-icon">
+                            <i class="fab fa-rust"></i>
+                        </div>
+                        <h3>Rust</h3>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 30%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card" data-skill="kotlin">
+                        <div class="skill-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3>Kotlin</h3>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 2%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card" data-skill="python">
+                        <div class="skill-icon">
+                            <i class="fab fa-python"></i>
+                        </div>
+                        <h3>Python</h3>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 85%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card" data-skill="node">
+                        <div class="skill-icon">
+                            <i class="fab fa-node-js"></i>
+                        </div>
+                        <h3>Node.js</h3>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 20%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card" data-skill="typescript">
+                        <div class="skill-icon">
+                            <i class="fab fa-js"></i>
+                        </div>
+                        <h3>TypeScript</h3>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 40%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card" data-skill="os">
+                        <div class="skill-icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h3 data-lang="skill_os">Разработка ОС</h3>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 3%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section projects">
+            <div class="container">
+                <h2 class="section-title" data-lang="projects_title">Проекты</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="img/os-project.jpg" alt="Операционная система">
+                        </div>
+                        <div class="project-info">
+                            <h3 data-lang="project_os_title">Операционная система ArtexOS</h3>
+                            <p data-lang="project_os_desc">Амбициозный проект по созданию современной операционной системы с акцентом на производительность и безопасность.</p>
+                            <a href="https://github.com/ArtexOS" target="_blank" class="btn btn-small" data-lang="project_link">Посмотреть</a>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="img/java-project.jpg" alt="Java проект">
+                        </div>
+                        <div class="project-info">
+                            <h3 data-lang="project_java_title">Java фреймворк</h3>
+                            <p data-lang="project_java_desc">Высокопроизводительный фреймворк для создания масштабируемых приложений на Java.</p>
+                            <a href="#" class="btn btn-small" data-lang="project_link">Посмотреть</a>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="img/rust-project.jpg" alt="Rust проект">
+                        </div>
+                        <div class="project-info">
+                            <h3 data-lang="project_rust_title">Rust библиотека</h3>
+                            <p data-lang="project_rust_desc">Библиотека для безопасного параллельного программирования на Rust.</p>
+                            <a href="#" class="btn btn-small" data-lang="project_link">Посмотреть</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section contact">
+            <div class="container">
+                <h2 class="section-title" data-lang="contact_title">Контакты</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3 data-lang="contact_subtitle">Давайте работать вместе!</h3>
+                        <p data-lang="contact_text">Если у вас есть вопросы или предложения о сотрудничестве, не стесняйтесь связаться со мной.</p>
+                        <div class="contact-links">
+                            <a href="https://github.com/ArtexOS" target="_blank" class="contact-link">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                            <a href="mailto:artex240619@gmail.com" class="contact-link">
+                                <i class="fas fa-envelope"></i> Email
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="#" class="logo">Artex</a>
+                    <p data-lang="footer_text">Разработчик ПО и создатель будущей ОС</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#about" data-lang="nav_about">Обо мне</a>
+                    <a href="#skills" data-lang="nav_skills">Навыки</a>
+                    <a href="#projects" data-lang="nav_projects">Проекты</a>
+                    <a href="#contact" data-lang="nav_contact">Контакты</a>
+                </div>
+                <div class="footer-social">
+                    <a href="https://github.com/ArtexOS" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://t.me/ArtexOS"><i class="fab fa-telegram"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="year"></span> Artex. <span data-lang="footer_rights">Все права защищены.</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/animations.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/language.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
