@@ -1,0 +1,29 @@
+.hero-background {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-4.0.1&auto=format&fit=crop&w=1350&q=80');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: white;
+}
+.navbarScroll.navbarScrolled {
+    background-color: #2c3e50 !important;
+    transition: background-color 0.3s ease-in-out;
+}
+.skill-card:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
+}
+.project-card {
+    transition: transform 0.3s ease;
+}
+.project-card:hover {
+    transform: translateY(-5px);
+}
+section {
+    padding: 80px 0;
+}
+.avatar-img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
